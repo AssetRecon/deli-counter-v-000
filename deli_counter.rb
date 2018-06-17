@@ -24,7 +24,7 @@ def now_serving(array)
 
 if array.size == 0
    puts "There is nobody waiting to be served!"
- elsif
+ else
    puts "Currently serving #{array.first}."
    new_array << array.slice(1,-1)
    return new_array
