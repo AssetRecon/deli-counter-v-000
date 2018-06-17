@@ -27,7 +27,7 @@ if array.size == 0
  else
    puts "Currently serving #{array.first}."
    new_array << array.slice(1,-1)
-   return new_array
+   puts new_array
  end
 
 
