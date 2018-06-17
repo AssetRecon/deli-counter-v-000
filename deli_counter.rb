@@ -7,10 +7,10 @@ def line(array)
    puts "The line is currently empty."
  else
    counter = 1
-array.each do |person|
-  numbered_array << "#{counter}. #{person}"
-  counter += 1
-    end
+   array.each do |person|
+     numbered_array << "#{counter}. #{person}"
+     counter += 1
+   end
    puts "The line is currently: #{numbered_array.join(" ")}"
    end
 end
@@ -18,5 +18,10 @@ end
 def take_a_number(array,name)
   array << name
   puts "Welcome, #{name}. You are number #{array.size} in line."
+end
+
+def now_serving(array)
+puts "There is nobody waiting to be served!" if array.size == 0
+
 
 end
