@@ -11,7 +11,7 @@ array.each do |person|
   numbered_array << "#{counter}. #{person}"
   counter += 1
     end
-   puts "The line is currently: #{array.join}"
+   puts "The line is currently: #{numbered_array.join(" ")}"
    end
 end
 
