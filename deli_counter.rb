@@ -26,8 +26,7 @@ if array.size == 0
    puts "There is nobody waiting to be served!"
  elsif
    puts "Currently serving #{array.first}."
-   updated_array << array.shift
-   return updated_array
+   array.slice(1,-1)
  end
 
 
